@@ -18,20 +18,17 @@
    $height = 46;
    $medium = "Oil on Panel";
    $era = "Renaissance";   
-   $dimensions = $width . "cm x " . $height . "cm";      
+   $dimensions = $width . "cm x " . $height . "cm";   
+   echo "<img src=\"images/" . $thumbnail . "\"" . "/>";
+   echo "<div>";
+   echo "<h2>" . $title . " (" . $year . ")" . "<br/>" . "By " . $artist . "</h2>"; 
+   echo "<p>" . $dimensions .
+   "<br/> " . $medium .
+   "<br/> " . $era .
+   "<br/>" .
+   "</p>" .
+"</div>";
 ?> 
-
-<img src="images/???.jpg"  />
-<div>
-   <h1> </h1>
-   <h2>By  </h2>
-   <p>
-   <br/>
-   <br/>
-   <br/>
-   </p>
-</div>
-
 
 </body>
 </html>
