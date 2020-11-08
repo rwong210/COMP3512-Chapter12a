@@ -14,7 +14,7 @@ echo "This page was generated: " . date("M dS, Y");
    //this is a php comment IN tags (will not appear)
    echo "This was output using PHP";
    echo "<br>"; //notice we can echo tags in php.
-
+   echo "This page was generated: " . date("M dS, Y");
 ?>
 </body>
 </html>
