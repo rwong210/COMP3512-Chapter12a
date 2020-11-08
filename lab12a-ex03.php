@@ -15,9 +15,9 @@ echo "<p>Time elapsed since " . date("M d, Y",$birthday) . ":</p>";
 
 <ul>
    <li><?php echo $secondsOld?> seconds, or </li>
-   <li><?php echo $secondsOld/(60*60*24)  ?> days, or </li>
-   <li><?php echo $secondsOld/(60*60*24*30.4) ?> months, or </li>
-   <li><?php echo$secondsOld/(60*60*24*365.242375) ?> years</li>
+   <li><?php echo number_format($secondsOld/(60*60*24), 0);  ?> days, or </li>
+   <li><?php echo number_format($secondsOld/(60*60*24*30.4), 1); ?> months, or </li>
+   <li><?php echo number_format($secondsOld/(60*60*24*365.242375), 2); ?> years</li>
 </ul>
 </body>
 </html>
