@@ -14,8 +14,10 @@ echo "This page was generated: " . date("M dS, Y");
    //this is a php comment IN tags (will not appear)
    echo "This was output using PHP";
    echo "<br>"; //notice we can echo tags in php.
-   echo "This page was generated: " . date("M dS, Y");
-   //Test comment
+   $date = date("l, M dS, Y");
+   echo "This page was generated: " . $date . "<hr/>";
+   $remaining = 365 - date("z") +1;
+   echo "There are " . $remaining . " days left in the year";
    
 ?>
 </body>
