@@ -5,13 +5,19 @@
 <link rel="stylesheet" href="css/lab12a-ex03.css">    
 </head>
 <body>
-<h1>Age calculator</h1>
+<h1>  Age calculator</h1>
+<?php 
+$birthday = mktime(0,0,0,1,15,2004);
+$today = time();
+$secondsOld = $today - $birthday;
+echo "<p>Time elapsed since " . date("M d, Y",$birthday) . ":</p>";
+?>
 
 <ul>
-   <li><?php  ?> seconds, or </li>
-   <li><?php  ?> days, or </li>
-   <li><?php  ?> months, or </li>
-   <li><?php  ?> years</li>
+   <li><?php echo $secondsOld?> seconds, or </li>
+   <li><?php echo $secondsOld/(60*60*24)  ?> days, or </li>
+   <li><?php echo $secondsOld/(60*60*24*30.4) ?> months, or </li>
+   <li><?php echo$secondsOld/(60*60*24*365.242375) ?> years</li>
 </ul>
 </body>
 </html>
