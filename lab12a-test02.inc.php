@@ -22,18 +22,18 @@
     <div><p><span><?= ($numUsers * 2) . ' email accounts'?></span></p></div>
     <footer><?php if ($numUsers < 10 ) {
                     echo '$' . ($numUsers * 10);
-                    echo ' €' . usdToEuro(10);
-                    echo ' £' . usdToPnd(10);
+                    echo ' €' . usdToEuro($numUsers*10);
+                    echo ' £' . usdToPnd($numUsers*10);
                     }
                   else if($numUsers >= 10  && $numUsers < 50){
                     echo '$' . ($numUsers * 9);
-                    echo ' €' . (usdToEuro(10) * 0.9);
-                    echo ' £' . (usdToPnd(10) * 0.9);
+                    echo ' €' . number_format((usdToEuro($numUsers*10) * 0.9), 0);
+                    echo ' £' . number_format((usdToPnd($numUsers*10) * 0.9), 0);
                     }
                   else if($numUsers >= 50){
                     echo '$' . ($numUsers * 8);
-                    echo ' €' . (usdToEuro(10) * 0.8);
-                    echo ' £' . (usdToPnd(10) * 0.8);
+                    echo ' €' . number_format((usdToEuro($numUsers*10) * 0.8), 0);
+                    echo ' £' . number_format((usdToPnd($numUsers*10) * 0.8), 0);
                     }
                   ?>
     </div>
