@@ -18,9 +18,7 @@
             generateBox("Developer", 3);
             generateBox("Professional", 10);
             generateBox("Enterprise", 50);
-
             ?>
-
         </div>
     </main>
 </body>
